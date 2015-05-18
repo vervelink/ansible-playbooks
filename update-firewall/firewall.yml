@@ -1,8 +1,5 @@
-hosts: all
-user: root
-vars:
-	color: brown
-
-tasks:
-    - name: update firewall
+- hosts: all
+  user: root
+  tasks:
+    - name: Update Firewall
       command: sh /root/meow.sh
